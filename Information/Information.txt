@@ -6,6 +6,9 @@ http://debuggable.com/posts/streaming-file-uploads-with-node-js:4ac094b2-b6c8-4a
 http://debugmode.net/2014/01/14/how-to-upload-file-in-node-js/
 http://stackoverflow.com/questions/17218506/file-upload-to-a-node-js-server
 
+->Ajax Rest webservice
+http://stackoverflow.com/questions/9481073/calling-rest-webservice-using-jquery-ajax-call-web-service-is-returning-json-s
+
 There modules added :
 assert
 restify
