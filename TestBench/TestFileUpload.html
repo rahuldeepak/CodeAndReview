@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Upload Example</title>
+
+    <script src="../lib/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript">
+
+
+        function callwebservice() {
+            alert("hi");
+
+            $.ajax({
+                dataType: 'json',
+                headers: {
+                    Accept: "application/json",
+                    "Access-Control-Allow-Origin": "*"
+                },
+                type: 'GET',
+                url: 'http://localhost:8013/',
+                success: function (data) {
+                    alert("hioo");
+                },
+                error: function (data) {
+                    alert("error");
+                }
+            });
+        }
+
+    </script>
+</head>
+<body>
+
+<button onclick="callwebservice()">
+    Web Service Call
+</button>
+
+
+</body>
+</html>
