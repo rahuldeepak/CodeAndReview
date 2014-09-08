@@ -8,7 +8,26 @@
 
 
         function callwebservice() {
-            alert("hi");
+
+            $.ajax({
+                dataType: 'json',
+                headers: {
+                    Accept: "application/json",
+                    "Access-Control-Allow-Origin": "*"
+                },
+                type: 'GET',
+                url: 'http://localhost:8013/user/0',
+                success: function (data) {
+                    alert("hioo");
+                },
+                error: function (data) {
+                    alert("error");
+                }
+            });
+        }
+
+
+        function callwebservice1() {
 
             $.ajax({
                 dataType: 'json',
@@ -32,6 +51,10 @@
 <body>
 
 <button onclick="callwebservice()">
+    Web Service Call
+</button>
+
+<button onclick="callwebservice1()">
     Web Service Call
 </button>
 
